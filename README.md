@@ -1,7 +1,7 @@
 # Open-Website
 Website for upesopen.org
 
-## Please contribute to the file so that website can be deployed with cool interactive features.
+## Website contains cool interactive prallax and typescript features that can be played around with.
 Open the index.html file to view the output.
 
 Our Mission
