@@ -7,17 +7,17 @@ This web template contains cool interactive prallax features, typescript feature
 Open the index.html file to view the output.
 
 
-## Initial instance of the website.
+#### Initial instance of the website.
 ![initial instance](https://user-images.githubusercontent.com/47113617/55078463-3e428300-50c0-11e9-8df4-a28f93e54619.png)
 
 
-## Transition of the view.
+#### Transition of the view.
 ![transition 1](https://user-images.githubusercontent.com/47113617/55078812-f3753b00-50c0-11e9-9716-9fa825584080.png)
 
 
 
 
-Our Mission
+### Our Mission
 
 Shaping the future of Academia & Industry with Open Source practices.
 
