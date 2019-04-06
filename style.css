@@ -22,7 +22,6 @@ nav{
 	padding: 10px 100px;
 	box-sizing: border-box;
 	transition: 0.5s;
-
 }
 
 
@@ -79,8 +78,10 @@ nav ul li a:hover{
 nav.black{
 	
 	background: rgba(0,0,0,0.8);
-	height: 60px;
+	height: 80px;
 	padding: 10px 50px;
+	background-image: linear-gradient(-90deg, #0d0d0d,#d9d9d9, #f2f2f2);
+	opacity:0.8;
 }
 
 nav .logo img{
@@ -241,7 +242,8 @@ h2{
 	position: relative;
 	z-index: 0;
 	background-color: white;
-	margin-bottom: 400px; 
+	//margin-bottom: 400px; 
+	
 }
 
 .data{
@@ -290,7 +292,7 @@ display:block;
 	width: 100%;	
 	text-align: left;	
 	font: bold 16px sans-serif;	
-	margin-top: 80px;
+	//margin-top: 80px;
 	opacity:0.6;}
 .footer-distributed .footer-left,.footer-distributed .footer-center,.footer-distributed .footer-right{	
 	display: inline-block;	
