@@ -6,13 +6,150 @@
  	
  	<link href="style.css" rel="stylesheet" type="text/css">
  	 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="typed.js"></script>
-</head>
- 
+	<!--<link rel="stylesheet" href="hover.css">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<style>
+body{
+margin:0;
+padding:0;
+}
+nav{
+background:transparent;
+overflow:auto;
+width:100%;
+}
+.left{
+float:left;
+}
+.right{
+float:right;
+margin:right:50px;
+}
+.li{
+display:inline-block;
+}
+.right li a{
+width:70px;
+display:block;
+padding:10px;
+text-align:center;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  margin: 5px 2px;
+  text-decoration: none;
+  border-radius:50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 1;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+      background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+	  color:white;
+	  }
+	  
+a{
+color:black;
+}
+h3 {
+  text-shadow: 2px 2px 5px blue;
+}
+p.thick {
+  font-weight: bold;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: white;
+  width: 155px;
+  height: 110px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: white;
+  color: white;
+}
+
+.flip-box-back {
+  background-color:#3399CC;
+  color: white;
+  transform: rotateY(180deg);
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+<!--.zoom {
+  padding: 5%;
+  transition: transform .2s;
+  width: 40%;
+  height: 40%;
+  margin: 0 auto;
+  }
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  transform: scale(1.5); 
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}-->
+</style>
+ </head>
  <body>
 	
 	<!-- This is the header -->
@@ -63,7 +200,7 @@
         <img src="logo.png">
       </div>
 
-      <ul>
+      <ul class="left">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
@@ -71,6 +208,12 @@
         <li><a href="#">Team</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+	  <ul class="right">
+	  <li><a href="https://www.facebook.com/upesopen/"class="fa fa-facebook"></a></li>
+	  <li><a href="https://twitter.com/UpesOpen" class="fa  fa-twitter"></a></li>
+	  <li><a href="https://www.instagram.com/_o.p.e.n_/?hl=en" class="fa fa-instagram"></a></li>
+	  <li><a href="https://www.linkedin.com/company/open-community/" class="fa fa-linkedin"></a></li>
+	  </ul>
   </nav>
 
 
@@ -79,10 +222,120 @@
       <div class="fore-text" id="fade-away2">"You are what you share !"</div>
       <div class="fore-bird"></div>
     </header>
-
-
-
-
+	<!--<div class="partnerlogo">
+			<table class="table  table-responsive">
+					  <thead>
+					    <tr>
+					   	  <th scope="col"><h3><p class="thick">Association With:</p></h3></th>
+						  <th scope="col"><div class="zoom"><a href="https://www.linuxfoundation.org/"><img src="linuxfound.png" alt="techmint" class="responsive" style="width:160px;height:75px;padding:5px"></a></div></th>
+						  <th scope="col"><h3 style="padding:0px;"><p class="thick">Supporting Partners:</p></h3></th>
+						  <th scope="col"><div class="zoom"><a href="https://www.tecmint.com/"><img src="tecmint.png" alt="techmint" class="responsive" style="width:130px;height:95px;padding:10px"></a></div></th>
+						 <th scope="col"><div class="zoom"><a href="https://www.ibm.com/in-en/"><img src="IMB.png" alt="IBM link" class="responsive" style="width:130px;height:100px;padding:20px;" ></a></div></th>
+						 <th scope="col"><div class="zoom"><a href="https://xebia.com/"><img src="xebia.png" alt="xebia" class="responsive" style="width:115px;height:80px;padding:10px;"></a></div></th>
+						 <th scope="col"><div class="zoom"><a href="https://www.stpi.in/"><img src="stpi.png" alt="stpi" class="responsive" style="width:120px;height:100px;padding:10px;"></a></div></th>
+						  </tr>
+						  </thead>
+						  </table>
+						  </div>
+<div class="partnerlogo">
+			<table class="table  table-responsive">
+					  <thead>
+					    <tr>
+					   	  <th scope="col"><h3><p class="thick">Supporting Partners:</p></h3></th>
+						  <th scope="col"><div class="zoom"><a href="https://www.tecmint.com/"><img src="tecmint.png" alt="techmint" class="responsive" style="width:130px;height:95px;padding:10px"></a></div></th>
+						 <th scope="col"><div class="zoom"><a href="https://www.ibm.com/in-en/"><img src="IMB.png" alt="IBM link" class="responsive" style="width:130px;height:100px;padding:20px;" ></a></div></th>
+						 <th scope="col"><div class="zoom"><a href="https://xebia.com/"><img src="xebia.png" alt="xebia" class="responsive" style="width:115px;height:80px;padding:10px;"></a></div></th>
+						 <th scope="col"><div class="zoom"><a href="https://www.stpi.in/"><img src="stpi.png" alt="stpi" class="responsive" style="width:120px;height:100px;padding:10px;"></a></div></th>
+                        </tr>
+					  </thead>
+					</table>
+					</div>-->				
+    <!--<div class="hovereffect">
+	<img class="img-responsive" src="tecmint.png" alt="techmint" style="width:150px;height:100px">
+        <div class="overlay">
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>-->
+	<!--<div class="partnerlogo">
+	<div class="container">
+	<table class="table  table-responsive">
+					  <thead>
+					    <tr>
+					   	  <th scope="col"><h3>Supporting Partners:</h3></th>
+						  <th scope="col"><a href="https://www.tecmint.com/"><img src="tecmint.png" alt="techmint link" class="image" style="width:150px;height:100px"></a></th>
+ </tr>
+ </thead>
+ </table> 
+</div>
+</div>-->
+<div class="partnerlogo">
+<table class="table  table-responsive">
+					  <thead>
+					    <tr>
+						<th scope="col"><h3><p class="thick">Association With:</p></h3></th>
+						<th scope="col"><div class="flip-box">
+                                   <div class="flip-box-inner">
+                                      <div class="flip-box-front"><img src="linuxfound.png" alt="linuxfoundation" style="width:150px;height:100px">
+                                       </div>
+                                   <div class="flip-box-back">
+                                    <div class="centered"><a href="https://www.linuxfoundation.org/">CLICK HERE</a></div>
+                                      </div>
+                                    </div>
+                                   </div></th>
+					   	  <th scope="col"><h3><p class="thick">Supporting Partners:</p></h3></th>
+                        <th scope="col">
+						<div class="flip-box">
+                        <div class="flip-box-inner">
+                        <div class="flip-box-front"><img src="tecmint.png" alt="tecmint" style="width:150px;height:100px">
+                        </div>
+                      <div class="flip-box-back">
+                         <div class="centered"><a href="https://www.tecmint.com/">CLICK HERE</a></div>
+                           </div>
+                             </div>
+                               </div></th>
+                                <th scope="col"><div class="flip-box">
+                                   <div class="flip-box-inner">
+                                      <div class="flip-box-front"><img src="IMB.png" alt="ibm" style="width:150px;height:100px">
+                                       </div>
+                                   <div class="flip-box-back">
+                                    <div class="centered"><a href="https://www.ibm.com/in-en/">CLICK HERE</a></div>
+                                      </div>
+                                    </div>
+                                   </div></th>
+                           <th scope="col">
+						    <div class="flip-box">
+                             <div class="flip-box-inner">
+                               <div class="flip-box-front"><img src="xebia.png" alt="xebia" style="width:150px;height:100px">
+                               </div>
+                              <div class="flip-box-back">
+                              <div class="centered"><a href="https://xebia.com/">CLICK HERE</a></div>
+                                </div>
+                              </div>
+                           </div></th>
+                       <th scope="col">
+						<div class="flip-box">
+                       <div class="flip-box-inner">
+                       <div class="flip-box-front"><img src="stpi.png" alt="stpi" style="width:150px;height:100px">
+                        </div>
+                       <div class="flip-box-back">
+                       <div class="centered"><a href="https://www.stpi.in/">CLICK HERE</a></div>
+                      </div>
+                     </div>
+                 </div></th>
+				 <th scope="col">
+						<div class="flip-box">
+                       <div class="flip-box-inner">
+                       <div class="flip-box-front"><img src="feelingtrend.png" alt="feedingtrends" style="width:150px;height:100px">
+                        </div>
+                       <div class="flip-box-back">
+                       <div class="centered"><a href="https://feedingtrends.com/">CLICK HERE</a></div>
+                      </div>
+                     </div>
+                 </div></th>
+                        </tr>
+					  </thead>
+					</table>
+					</div>
 
 
 	<!-- This is the content -->
